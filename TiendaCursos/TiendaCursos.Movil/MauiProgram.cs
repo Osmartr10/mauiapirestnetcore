@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CurrieTechnologies.Razor.SweetAlert2;
+using Microsoft.Extensions.Logging;
 using TiendaCursos.Movil.Repositorios;
 
 namespace TiendaCursos.Movil
@@ -26,7 +27,7 @@ namespace TiendaCursos.Movil
                 BaseAddress = new Uri("http://localhost:5141/")
             });
             builder.Services.AddScoped<IRepositorio, Repositorio>();
-
+            builder.Services.AddSweetAlert2();
             return builder.Build();
         }
     }
