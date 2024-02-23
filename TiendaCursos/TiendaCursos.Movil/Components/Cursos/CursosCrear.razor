@@ -1,0 +1,27 @@
+﻿@page "/cursos/crear"
+@inject IRepositorio repositorio
+@inject NavigationManager navigationManager
+@inject SweetAlertService sweetAlertService
+
+<h3>Crear Curso</h3>
+<CursoFormulario @ref="cursoForm" curso="curso" OnValidSubmit="Crear" Cancelar="Navegar"></CursoFormulario>
+@code {
+    private Curso curso = new();
+    private CursoFormulario? cursoForm;
+    private async Task Crear()
+    {
+        var httpResponse = await repositorio.Post("/api/cursos", curso);
+        if(httpResponse.Error)
+        {
+            var message = await httpResponse.GetErrorMessageAsync();
+            await sweetAlertService.FireAsync("Error", message, SweetAlertIcon.Error);
+            return;
+        }
+        Navegar();
+    }
+    private void Navegar()
+    {
+        cursoForm!.formularioPostOk = true;
+        navigationManager.NavigateTo("/cursos");
+    }
+}

@@ -32,6 +32,7 @@ namespace TiendaCursos.Shared
         public string Programa { get; set; } = null;
 
         [Display(Name = "Imagen")]
+        [Required(ErrorMessage = "El campo {0} es obligatorio")]
         public string Imagen { get; set; } = null!;
     }
 }
