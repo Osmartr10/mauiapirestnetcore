@@ -1,0 +1,44 @@
+﻿@page "/cursos"
+@inject IRepositorio repositorio
+<h3>Lits de cursos</h3>
+
+<div class="form-group row">
+    <div class="col-sm-10">
+        <a href="" class="btn btn-primary m-1">Nuevo Curso</a>
+    </div>    
+</div>
+
+<ListaGenerica MiLista="Cursos">
+    <Cargando>Estoy en ello..</Cargando>
+    <Cuerpo>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><strong>Nombre Curso</strong></th>
+                    <th><strong>Precio</strong></th>
+                    <th><strong>Modificar</strong></th>
+                    <th><strong>Eliminar</strong></th>
+                </tr>
+            </thead>
+            @foreach (Curso c in Cursos)
+            {
+                <tr>
+                    <td>@c.Nombre</td>
+                    <td>@c.Precio</td>
+                    <td><a class="btn btn-primary m-1">Modificar</a></td>
+                    <td><a class="btn btn-danger">Eliminar</a></td>
+                </tr>
+            }
+        </table>
+    </Cuerpo>
+</ListaGenerica>
+
+@code {
+    public List<Curso>? Cursos { get; set; } = new List<Curso>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await repositorio.Get<List<Curso>>("/api/cursos/");
+        Cursos = response.Response;
+    }
+}

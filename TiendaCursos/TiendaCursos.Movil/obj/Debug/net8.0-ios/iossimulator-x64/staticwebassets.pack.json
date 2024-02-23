@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\MAUI\\TiendaCursos\\TiendaCursos.Movil\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\bundle\\TiendaCursos.Movil.styles.css",
+      "PackagePath": "staticwebassets\\TiendaCursos.Movil.styles.css"
+    },
+    {
+      "Id": "E:\\MAUI\\TiendaCursos\\TiendaCursos.Movil\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "E:\\MAUI\\TiendaCursos\\TiendaCursos.Movil\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\MAUI\\TiendaCursos\\TiendaCursos.Movil\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\MAUI\\TiendaCursos\\TiendaCursos.Movil\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\MAUI\\TiendaCursos\\TiendaCursos.Movil\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.TiendaCursos.Movil.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.build.TiendaCursos.Movil.props",
+      "PackagePath": "build\\TiendaCursos.Movil.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildMultiTargeting.TiendaCursos.Movil.props",
+      "PackagePath": "buildMultiTargeting\\TiendaCursos.Movil.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildTransitive.TiendaCursos.Movil.props",
+      "PackagePath": "buildTransitive\\TiendaCursos.Movil.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

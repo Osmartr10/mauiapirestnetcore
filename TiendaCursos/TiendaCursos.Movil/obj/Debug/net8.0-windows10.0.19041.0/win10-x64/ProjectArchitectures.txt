@@ -1,0 +1,1 @@
+E:\MAUI\TiendaCursos\TiendaCursos.Movil\TiendaCursos.Movil.csproj;x64
